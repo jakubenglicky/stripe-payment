@@ -12,6 +12,5 @@ module.exports = async (req, res) => {
 		cancel_url: `${process.env.STRIPE_CANCEL_URL}`,
 	});
 
-	console.log(session.id);
 	res.json({ id: session.id });
 }
